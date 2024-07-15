@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    height: 100vh;
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar {
+    padding: 20px;
+    z-index: 100;
+    position: relative;
+}
+
+.navbar .btn-outline-light {
+    margin-right: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: .9;
+}
+
+.hero {
+    z-index: 10;
+    position: relative;
+    top: 33%;
+    transform: translateY(-40%);
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.custom-input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.custom-input {
+    border: 1px solid #ccc;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.268);
+    border-right: none;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.custom-button {
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #f40612;
+}
+
+.hero2 {
+    padding-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.accordion .card-header {
+    background-color: #343a40;
+}
+
+.accordion .card-header .btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-right: 0;
+    float: left;
+    /* Ensure it aligns to the left */
+    outline: none;
+}
+
+.accordion .card-body {
+    background-color: #343a40;
+    color: #fff;
+    text-align: left;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 85px;
+    left: 73px;
+    width: 72%;
+    height: 54%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.img-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 140px;
+}
+
+.py-3 {
+    padding-top: 0rem !important;
+    padding-bottom: 5px !important;
+}
+
+h2 {
+    font-size: 37px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.btn-link {
+    text-align: left;
+    padding-right: 0;
+    float: left;
+    /* Ensure it aligns to the left */
+    outline: none;
+}
+
+.btn-link:focus {
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0);
+}
+
+
+@media (max-width: 450px) {
+    .position-absolute {
+        position: absolute;
+        top: 64px;
+        left: 54px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .position-absolute {
+        top: 54px;
+        left: 46px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .custom-input-group {
+        flex-direction: column;
+    }
+
+    .custom-input-group .custom-input {
+        border-radius: 4px 4px 0 0;
+        border-right: 1px solid #ccc;
+        width: 100%;
+        /* Ensure full width */
+    }
+
+    .custom-input-group .custom-button {
+        border-radius: 0 0 4px 4px;
+        border-top: 1px solid #ccc;
+        width: 100%;
+        /* Ensure full width */
+    }
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
